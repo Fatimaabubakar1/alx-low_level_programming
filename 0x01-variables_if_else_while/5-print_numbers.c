@@ -11,11 +11,9 @@ int main(void)
 {
 	int num;
 
-	for (num = 10; num > 0; num++)
-
+	for (num = 0; num <=  9; num++)
 	{
-	if (num != 5 && num != '9')
-	putchar(num);
+		printf("%d", num)
 	}
 
 	putchar('\n');
