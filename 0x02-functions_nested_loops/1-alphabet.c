@@ -1,22 +1,19 @@
 #include "main.h"
 
 /**
- * main - function
- * Return: 0
+ * print_alphabet - print_alphabets
+ * 
  */
 
-int main(void)
+void print_alphabet(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
-
+	char al;
+	al = 'a';
+	while (al <= 'z')
+	{
+		_putchar(al);
+		al++;
+	}
+	_putchar('\n');
 }
 
