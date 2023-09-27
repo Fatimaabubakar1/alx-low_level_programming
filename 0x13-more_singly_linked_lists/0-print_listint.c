@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "list.h"
 
 /**
  * print_listint - prints all the elements of a linked list
@@ -6,16 +6,12 @@
  *
  * Return: number of nodes
  */
-#include <stdio.h>
-#include <stdlib.h>
 
-// Define the structure for a single node in the linked list
 typedef struct listint_t {
     int data;
     struct listint_t *next;
 } listint_t;
 
-// Function to print all elements of the linked list
 size_t print_listint(const listint_t *h)
 {
     size_t node_count = 0;
@@ -32,7 +28,6 @@ size_t print_listint(const listint_t *h)
 
 int main()
 {
-    // Example of creating a linked list with three elements
     listint_t *head = NULL;
     listint_t *second = NULL;
     listint_t *third = NULL;
@@ -50,11 +45,9 @@ int main()
     third->data = 3;
     third->next = NULL;
 
-    // Print the elements of the linked list and get the count
     size_t count = print_listint(head);
     printf("Number of nodes: %zu\n", count);
 
-    // Don't forget to free the memory allocated for the nodes
     free(head);
     free(second);
     free(third);
